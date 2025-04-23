@@ -1,0 +1,118 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+}
+
+.container {
+    background: rgb(231, 231, 233); /* Adds a slight white background to improve readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.h-font {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.h2-font {
+    font-family: "Lora", serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    appearance: textfield;
+}
+
+.custom-bg {
+    background-color: #2ec1ac;
+    border: 1px solid #2ec1ac;
+}
+
+.custom-bg:hover {
+    background-color: #279e8c;
+    border-color: #279e8c;
+}
+
+#dashboard-menu {
+    height: 100vh;
+    position: fixed;
+    width: 280px;
+    z-index: 1001;
+    transition: all 0.3s;
+}
+
+.main-content {
+    margin-left: 280px;
+    transition: all 0.3s;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    position: relative;
+    z-index: 2;
+    margin: 20px 0;
+    font-size: 24px; /* Larger font size for visibility */
+}
+
+.stat-card {
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #dashboard-menu {
+        left: -280px;
+    }
+
+    #dashboard-menu.active {
+        left: 0;
+    }
+
+    body {
+        margin-left: 0; /* Reset margin for mobile */
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2ec1ac;
+}
+
+.timeline-time {
+    font-weight: bold;
+    color: #2ec1ac;
+}

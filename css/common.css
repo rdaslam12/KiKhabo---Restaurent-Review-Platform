@@ -1,0 +1,44 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: rgb(233, 232, 231); 
+    padding: 20px;
+    border-radius: 10px;
+}
+.h-font{
+    font-family: "Lexend Deca", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type=number] {
+-moz-appearance: textfield;
+}  
+.h2-font{
+    font-family: "Lora", serif;
+}
+.custom-bg{
+background-color: #2ec1ac;
+border: 1px solid #2ec1ac;
+}
+.custom-bg:hover{
+background-color: #279e8c;
+border-color: #279e8c;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    min-height: 160px;
+    background: #fff;
+}
