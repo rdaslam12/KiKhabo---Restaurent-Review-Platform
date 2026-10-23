@@ -7,7 +7,7 @@ A small restaurant review and discovery platform built with PHP and MySQL.
 
 </div>
 
-KiKhabo was one of my earlier engineering projects, created while learning how to build a database-backed web application with user authentication, filtering, an admin panel, and reusable PHP components. It is kept here as a polished record of that stage of my development rather than as a production-ready product.
+KiKhabo was one of my earlier engineering projects, created while learning how to build a database-backed web application with user authentication, filtering, an admin panel, and reusable PHP components.
 
 ## Preview
 
