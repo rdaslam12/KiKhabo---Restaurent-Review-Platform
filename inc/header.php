@@ -2,19 +2,12 @@
 require('admin/inc/db_config.php');
 require_once('admin/inc/essentials.php');
 session_start();
-echo "<!-- Debug: userLogin=" . ($_SESSION['userLogin'] ?? 'not set') . " -->";
 ?>
-
-
-
-
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
         <a href="index.php">
             <img src="images/kikhabologo.png" alt="logo" style="width:100px;height:60px;">
-            
         </a>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -73,7 +66,7 @@ echo "<!-- Debug: userLogin=" . ($_SESSION['userLogin'] ?? 'not set') . " -->";
 <!--Login Option Modal -->
 <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered"> <!-- etay center e ashe  -->
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <form id ="login" action="login.php" method="POST" >
                 <div class="modal-header">
@@ -94,17 +87,14 @@ echo "<!-- Debug: userLogin=" . ($_SESSION['userLogin'] ?? 'not set') . " -->";
                     </div>
                     <div class="d-flex align-items-center justify-content-between mb-2">
                         <button type="submit" name="login" class="btn btn-dark shadow-none">LOGIN</button>
-
                     </div>
-
                 </div>
-
             </form>
-
         </div>
     </div>
 </div>
-<!--Register Modal eta-->
+
+<!--Register Modal -->
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -135,7 +125,6 @@ echo "<!-- Debug: userLogin=" . ($_SESSION['userLogin'] ?? 'not set') . " -->";
                             <label class="form-label">Phone Number</label>
                             <input type="text" id="phone_number" name="phone_number" class="form-control shadow-none" required>
                         </div>
-                        
                         <div class="col-md-12 p-0 mb-3">
                             <label class="form-label">Address</label>
                             <textarea id="address" name="address" class="form-control shadow-none" rows="1" required></textarea>
@@ -159,7 +148,6 @@ echo "<!-- Debug: userLogin=" . ($_SESSION['userLogin'] ?? 'not set') . " -->";
                 </div>
             </div>
         </form>
-
         </div>
     </div>
 </div>
